@@ -1,0 +1,26 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    width: 100px;
+}
+.cont{
+    padding: 50px;
+    display: grid;
+}
+.top{
+    display: flex;
+    justify-content: center;
+}
+a{
+    bottom: 0px;
+    position: relative;
+}
+.botm{
+    display: flex;
+    justify-content: center;
+}
+main{
+    padding-top: 90px;
+}
