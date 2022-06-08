@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <!--fielset es para definir el area de un formulario--->
+        <fieldset>
+            <!--Legend srive para darle introcciones a modo de titulo en el formulario--->
+            <!----hay mas tipos como el tel(numeros, email arroba)---->
+            <!----el atributo "placeholder" sivre para poner el 
+            texto que el usuario ve antes de escribir"---->
+
+            <!--uso div ya que no se cumple la regla para usar un section--->
+            <!--div es el mas generico--->
+            
+            <div>
+
+                <label>Apellido</label>
+                <input class="input" type="text" placeholder="Apellido"/>
+
+            </div> 
+
+            <div>
+                <label>Nombre</label>
+                    <input class="input" type="text" placeholder="Nombre"/>
+            </div> 
+
+            <div>   
+                <label>Fecha nacimiento</label>                
+                <section class="input">
+                        <input class="fechaDiv" type="number" placeholder="dia"/>
+                        <input class="fechaDiv" type="number" placeholder="mes"/>
+                        <input class="fechaDiv" type="number" placeholder="año"/>
+                </section>
+            </div>
+
+            <div>    
+                <label>Ciudad de Nacimiento</label>
+                <input class="input" type="text" placeholder="Ciudad">
+            </div>
+            <div>
+                <label>Pais de Nacimiento</label>
+                <select class="input" name="select">
+                    <option value="value1">Mexico</option>
+                    <option value="value2" selected>China</option>
+                    <option value="value3">Mongolia</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Nacionalidad</label>
+                <select class="input" name="select">
+                    <option value="value1">Mexico</option>
+                    <option value="value2" selected>China</option>
+                    <option value="value3">Mongolia</option>
+                </select>
+            </div>
+
+            <div>    
+                <label>Pais de Pasaporte</label>
+                <input class="input" type="text" placeholder="Ciudad">
+            </div>
+            <div>   
+                <label>Fecha emision del pasaporte</label>
+                <section class="input">
+                    <input class="fechaDiv" type="number" placeholder="dia"/>
+                    <input class="fechaDiv" type="number" placeholder="mes"/>
+                    <input class="fechaDiv" type="number" placeholder="año"/>
+                </section>
+            </div>
+
+            <div>   
+                <label>Fecha vencimiento del pasaporte</label>
+                <section class="input">
+                    <input class="fechaDiv" type="number" placeholder="dia"/>
+                    <input class="fechaDiv" type="number" placeholder="mes"/>
+                    <input class="fechaDiv" type="number" placeholder="año"/>
+                </section>
+            </div>
+            <div id="enviar">
+                <input id="boton" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
