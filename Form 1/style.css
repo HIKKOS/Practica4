@@ -1,37 +1,42 @@
-:root{
-    --medida: 20%;
-}
-*{
+
+form{
     padding: 0%;
+    margin: 0% auto;
 
 }
-
-select{
-    border-radius: 5px;
-}
-
-
-.input{
-    float: right;
-}
-div{
-    margin: 10px 0%;
-}
-.fechaDiv{
-    width: 50px;
-}
-
-fieldset{
-    margin: 0 auto;
-    width: 50%;
-}
-#enviar{
+#lab{
+    padding: 20px;
     width: fit-content;
     margin: 0 auto;
+    font-size: 20px;
+    background-color: #f1d2ff;
+    border-radius: 10px;
+    font-family: sans-serif;
 }
-#boton{
-    margin: 10px;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
+.inp,.sel{
+    width: 185px;
+}
+
+.row{
+    height: 30px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.label{
+    width: fit-content;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.inpNumber{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+}
+.numberC{
+    padding: 0;
+    width: 54px;
 }

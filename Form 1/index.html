@@ -9,85 +9,101 @@
 </head>
 <body>
     <form>
-        <!--commit de ejemplo--->
-        <fieldset>
-            <!--Legend srive para darle introcciones a modo de titulo en el formulario--->
-            <!----hay mas tipos como el tel(numeros, email arroba)---->
-            <!----el atributo "placeholder" sivre para poner el 
-            texto que el usuario ve antes de escribir"---->
-
-            <!--uso div ya que no se cumple la regla para usar un section--->
-            <!--div es el mas generico--->
-            
-            <div>
-
-                <label>Apellido</label>
-                <input class="input" type="text" placeholder="Apellido"/>
-
+        <div id="lab">
+            <div class="row">
+                <div class="label">
+                    <label>Apellido</label>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Apellido que se muestra">
+                </div> 
             </div> 
-
-            <div>
-                <label>Nombre</label>
-                    <input class="input" type="text" placeholder="Nombre"/>
+            <div class="row">
+                <div class="label">
+                    <label>Nombre</label>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Solo nombre">
+                </div> 
             </div> 
-
-            <div>   
-                <label>Fecha nacimiento</label>                
-                <section class="input">
-                        <input class="fechaDiv" type="number" placeholder="dia"/>
-                        <input class="fechaDiv" type="number" placeholder="mes"/>
-                        <input class="fechaDiv" type="number" placeholder="año"/>
-                </section>
-            </div>
-
-            <div>    
-                <label>Ciudad de Nacimiento</label>
-                <input class="input" type="text" placeholder="Ciudad">
-            </div>
-            <div>
-                <label>Pais de Nacimiento</label>
-                <select class="input" name="select">
-                    <option value="value1">Mexico</option>
+            <div class="row">
+                <div class="label">
+                    <label>Fecha de Nacimiento</label>
+                </div>
+                <div class="inpNumber">
+                    <input class="numberC" type="number" placeholder="Dia">
+                    <input class="numberC" type="number" placeholder="Mes">
+                    <input class="numberC" type="number" placeholder="Año">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="label">
+                    <label>Ciudad</label>
+                </div >
+                <div class="inp"> 
+                    <input type="text" placeholder="Ciudad de Ncimiento">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="label">
+                    <label>Pais</label>
+                </div>
+                <select class="sel">
+                    <option value="value1">México</option>
                     <option value="value2" selected>China</option>
-                    <option value="value3">Mongolia</option>
+                    <option value="value3">Perú</option>
+                  </select>
+            </div> 
+            <div class="row">
+               <div  class="label">
+                 <label>Nacionalidad</label>
+               </div>
+                <select class="sel">
+                    <option value="value1">Peruana</option>
+                    <option value="value2" selected>Mexicana</option>
+                    <option value="value3">Colombiana</option>
                 </select>
-            </div>
-
-            <div>
-                <label>Nacionalidad</label>
-                <select class="input" name="select">
-                    <option value="value1">Mexico</option>
-                    <option value="value2" selected>China</option>
-                    <option value="value3">Mongolia</option>
+            </div> 
+            <div class="row">
+                <div class="label">
+                    <label >Numero de Pasaporte</label>
+                </div>
+                <div class="inp">
+                    <input type="text" placeholder="Numero de Pasaporte">
+                </div>
+            </div> 
+            <div class="row">
+                <div  class="label">
+                    <label class="label">Pais donde se ha hemitido</label>
+                </div>
+                <select class="sel">
+                    <option  value="value1">Mongolia</option>
+                    <option value="value2" selected>Irak</option>
+                    <option value="value3">India</option>
                 </select>
-            </div>
-
-            <div>    
-                <label>Pais de Pasaporte</label>
-                <input class="input" type="text" placeholder="Ciudad">
-            </div>
-            <div>   
-                <label>Fecha emision del pasaporte</label>
-                <section class="input">
-                    <input class="fechaDiv" type="number" placeholder="dia"/>
-                    <input class="fechaDiv" type="number" placeholder="mes"/>
-                    <input class="fechaDiv" type="number" placeholder="año"/>
-                </section>
-            </div>
-
-            <div>   
-                <label>Fecha vencimiento del pasaporte</label>
-                <section class="input">
-                    <input class="fechaDiv" type="number" placeholder="dia"/>
-                    <input class="fechaDiv" type="number" placeholder="mes"/>
-                    <input class="fechaDiv" type="number" placeholder="año"/>
-                </section>
-            </div>
-            <div id="enviar">
-                <input id="boton" type="submit" value="Enviar">
-            </div>
-        </fieldset>
-
+            </div> 
+            <div class="row">
+                <div class="label">
+                    <label>Fecha de emision</label>
+                </div>
+                <div class="inpNumber">
+                    <input class="numberC" type="number" placeholder="Dia">
+                    <input class="numberC" type="number" placeholder="Mes">
+                    <input class="numberC" type="number" placeholder="Año">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="label">
+                    <label>Fecha de vencimiento</label>
+                </div>
+                <div class="inpNumber">
+                    <input class="numberC" type="number" placeholder="Dia">
+                    <input class="numberC" type="number" placeholder="Mes">
+                    <input class="numberC" type="number" placeholder="Año">
+                </div>
+            </div> 
+        </div>
+    
     </form>
     
 </body>
